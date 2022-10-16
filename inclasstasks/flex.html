@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Media Queries</title>
+        <i class="fa-brands fa-linkedin"></i>
+    </head>
+    <style>
+        .container{
+            display: flex;
+            /*flex-direction: column-reverse;*/
+            justify-content: space-evenly;
+            align-items: baseline;
+        }
+        .item{
+            border: 1px solid black;
+            width: 20%;
+            padding: 20px ;
+            margin: 20px;
+            
+        }
+        .div1{
+            order: 2;
+            flex: 2;
+        }
+        .div2{
+            padding-top: 40px;
+            order: 0;
+        }
+        .div3{
+            order: 1;
+            flex: 3;
+        }
+        @media screen and (max-width:600px){
+            .container{
+            flex-direction: column;
+            }
+           .item{
+            width: 80%;
+
+            }
+        }
+
+    </style>
+    <body>
+        <div class="container">
+   <div class="item div1">ONE Lorem ipsum dolor, 
+    sit amet consectetur adipisicing elit. Voluptates mollitia, 
+    labore vel, ut sed vero, porro quidem error quaerat earum hic dicta et? 
+    Quidem pariatur, iusto nobis natus suscipit numquam saepe ipsam error, 
+    possimus non excepturi voluptate magnam mollitia eius asperiores distinctio 
+    amet aut corporis sit neque blanditiis? 
+    Cumque, rerum!</div>
+   <div class="item  div2">TWO Lorem ipsum dolor, 
+    sit amet consectetur adipisicing elit. Voluptates mollitia, 
+    labore vel, ut sed vero, porro quidem error quaerat earum hic dicta et? 
+    Quidem pariatur, iusto nobis natus suscipit numquam saepe ipsam error, 
+    possimus non excepturi voluptate magnam mollitia eius asperiores distinctio 
+    amet aut corporis sit neque blanditiis? 
+    Cumque, rerum!</div>
+   <div class="item  div3"> THREE Lorem ipsum dolor, 
+    sit amet consectetur adipisicing elit. Voluptates mollitia, 
+    labore vel, ut sed vero, porro quidem error quaerat earum hic dicta et? 
+    Quidem pariatur, iusto nobis natus suscipit numquam saepe ipsam error, 
+    possimus non excepturi voluptate magnam mollitia eius asperiores distinctio 
+    amet aut corporis sit neque blanditiis? 
+    Cumque, rerum!</div>
+</div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Media Queries</title>
+        <i class="fa-brands fa-linkedin"></i>
+        <style>
+            .div{
+                border: 1px solid black;
+                width: 20%;
+                padding: 10px;
+                margin: 10px ;
+            }
+            .div1, .div2{
+                float:left;
+            }
+            :root{
+                font-size: 12px;
+            }
+            .div3{
+                clear: left;
+            }
+            @media screen and (max-width:600px) {
+                
+                .div{
+                    width:80%;
+                    margin-left: auto;
+        
+                }
+                .div1, .div2{
+                    float: none;
+                }
+                
+            }
+            @media print{
+                .div{
+                    color: red;   
+                    font-weight: bold;
+                }
+        
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div div1">Enthusiastic Information Technology student eager to contribute to team success through hard work, attention to detail and excellent organizational skills. 
+            Clear understanding of problems and training in programming. Motivated to learn.</div>
+        <div class="div div2">Enthusiastic Information Technology student eager to contribute to team success through hard work, attention to detail and excellent organizational skills. 
+            Clear understanding of problems and training in programming. Motivated to learn.</div>
+        <div class="div div3">Enthusiastic Information Technology student eager to contribute to team success through hard work, attention to detail and excellent organizational skills. 
+            Clear understanding of problems and training in programming. Motivated to learn.</div>
+    </body>

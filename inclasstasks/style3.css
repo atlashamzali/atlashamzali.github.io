@@ -1,0 +1,17 @@
+img{
+    width: 300;
+}
+.removed{
+    display: none;
+  }
+  .hidden{
+    visibility: hidden;
+  }
+  
+  .block{
+    display: block;
+  }
+  
+  span{
+    border: 1px solid chocolate;
+  }
