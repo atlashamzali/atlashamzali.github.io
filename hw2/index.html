@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4c8851c3e8.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">   
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"  href="weather-app.png">
+</head>
+  <body>
+     <div class="card">
+      <header><i class="fa-solid fa-arrow-rotate-left"></i></i>Weather App</header>
+     <section class ="information">
+      <p class="box-text"></p>
+       <input type ="text" spellcheck ="false" placeholder="Enter city name" required>
+
+        <div class="barrier" ></div>
+        <span> 
+          <input type ="text2" spellcheck ="false" placeholder="Enter longitude" required>
+          <span class="barrier2" ></span>
+          <input type ="text2" spellcheck ="false" placeholder="Enter latitude" required>
+        </span>
+
+        <div class="barrier" ></div>
+        <button>Get Device Location</button>
+      </section>
+       <section class="info-weather">
+         <img src="weather.png" alt="Weather Icon"> 
+        <div class="temperature">
+            <span class="data">_</span>
+            <span class="degree-celcius">°</span>C
+        </div>
+        <div class="weather">_ _</div>
+        <div class = "location">
+          <i class="fa-solid fa-location-pin"></i>
+            <span>_, _</span>
+        </div>
+        <div class="foot-card">
+            <div class="column feels">
+            <div class="details">
+              <p>Feels like</p>
+                <div class="temperature">
+                    <span class ="data-2">_</span>
+                    <span class="degree-celcius">°</span>C
+                </div>
+            </div>
+            </div>
+            <div class="column max-temperature">
+              <div class="details">
+                <p>Max-Temp</p>
+                  <span>_</span>
+                   <span>°C</span>
+          </div> 
+        </div>
+          <div class="column min-temperature">
+            <div class="details">
+              <p>Min-Temp</p>
+                <span>_</span>
+                <span>°C</span>
+            </div>
+        </div> 
+            <div class="column humidity">
+                <div class="details">
+                  <p>Humidity</p>
+                    <span>_</span>      
+                </div>
+            </div>
+            <div class="column wind">
+                <div class="details">
+                  <p>Wind</p>
+                    <span>_</span>
+                 
+                </div>
+            </div> 
+            <div class="column pressure">
+                <div class="details">
+                  <p>Pressure</p>
+                    <span>_</span>
+                </div>
+            </div> 
+      </div>
+      </section>
+    </div>
+     <script src="index.js"></script>
+  </body>
+</html>
