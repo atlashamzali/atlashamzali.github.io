@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;;
+    font-family: 'Open Sans', sans-serif;
 }
  body{
     background-image: url('bjark-DZ975EkUJH0-unsplash.jpg');
@@ -13,17 +13,11 @@
     min-height: 100vh;
     background-position: center;
     background-size: cover;
-    /* background: #8da3a5; */
+    
     
 }
-/* ::selection{
-    color: #fff;
-    background: #43affc;
-
-} */
 
 .card{
-    /* background-color: #425F57; */
     width: 600px;
     border-radius: 15px;
     box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
@@ -93,19 +87,6 @@ header i{
 .information input:is(:focus, :valid){
     border: 2px solid #8da3a5;
     }
-/* .information input ::placeholder{
-     color: #bfbfbf;
-} */
-/* .information .barrier{
-    height: 1px;
-    width: 100%;
-    margin: 25px 0;
-    background: #ccc;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 .barrier2::before{
     content: "and";
     background: trans;
@@ -184,22 +165,13 @@ header i{
     display: flex;
     width: 100%;
     padding: 3px 0px;
-    /* align-items: center;*/
+    align-items: center;
     justify-content: center; 
 }
 .column i{
     color: #8da3a5;
     font-size: 40px;
 }
-/* .column.humidity{
-    border-left:  1px solid #bfbfbf;
-    }
- .column.wind{
-    border-left:  1px solid #bfbfbf;
-     }
- .column.pressure{
-    border-left:  1px solid #bfbfbf;
-     } */
 
 .column.details{
     margin-left: 5px;
@@ -227,63 +199,3 @@ header i{
 input[type=text2]{
     width: 40%;
 }
-/* .humidity i{} */
-
-/*.wrapper.active header i{
-    margin-left: 5px;
-    font-size: 30px;
-}
-
-
-
-
-.information input ::placeholder{
-color: #bfbfbf;
-}
-
-
-.information button{
-    color: #fff;
-    cursor: pointer;
-    background-color:  #43affc;
-    transition: 0.3s ease;
-}
-.information button:hover{
-    background: #1d9ffc;
-}
-
-.wrapper.active .info-weather{
-    display: flex;
-}
-
-
-
-.info-weather .weather{
-font-size: 21px;
-text-align: center;
-margin: -5px 20px 15px;
-}
-
-
-
-
-
-
-
-
-.column .details{
-    margin-left:  3px;
-}
-
-.details .temp .deg{
-    margin: 0;
-    font-size: 17px;
-    padding: 0 2px 0 1px;
-}
-.column .details p{
-    font-size: 14px;
-    margin-top: -6px;
-}
-.humidity i{
-    font-size:  37px;
-} */

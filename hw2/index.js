@@ -96,9 +96,3 @@ locationBtn.addEventListener("click", () =>{
         card
     .classList.remove("active");
     });
-
-
-returningBack.addEventListener("click", ()=>{
-    card
-.classList.remove("active");
-});
