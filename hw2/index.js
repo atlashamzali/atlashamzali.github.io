@@ -54,8 +54,7 @@ locationBtn.addEventListener("click", () =>{
        function weatherDetails(informationAbout){
         if(informationAbout.cod == "404"){
             boxText.classList.replace("pending", "error" );
-            boxText.innerText = `${boxPart
-            .value} isn't a valid city name`; 
+            boxText.innerText = `${boxPart.value} isn't a valid city name`; 
         }else{
             const city = informationAbout.name;
             const country = informationAbout.sys.country;

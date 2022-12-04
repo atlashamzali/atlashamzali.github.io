@@ -116,7 +116,7 @@ header i{
     justify-content: center;
     flex-direction: column;
 }
-.wrapper.active .info-weather{
+.card.active .info-weather{
     display: flex;
 }
 .info-weather img{
