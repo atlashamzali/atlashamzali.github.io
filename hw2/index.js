@@ -44,7 +44,21 @@ locationBtn.addEventListener("click", () =>{
         api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=05fa113414e438012693c49067410772`;
         fetchData();
     } 
-
+    const fetchWeatherByLongLat = async (latitude, longitude) => {
+        //   console.log(latitude, longitude);
+        
+          try {
+            const res = await fetch(
+              `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=05fa113414e438012693c49067410772`
+            )
+              .then((response) => response.json())
+              .then((result) => weatherDetails(result));
+            const data = await res.json();
+            // console.log(data);
+          } catch (error) {
+            alert("No longitude and latitude exists");
+          }
+        };
 
        function fetchData(){
         boxText.innerText = "Information about Weather";
