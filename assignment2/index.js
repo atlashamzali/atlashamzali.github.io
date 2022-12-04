@@ -2,9 +2,12 @@ const card = document.querySelector(".card"),
 informationPart = card.querySelector(".information"),
 boxText = informationPart.querySelector(".box-text"),
 boxPart = informationPart.querySelector("input"),
-locationBtn = informationPart.querySelector("button"),
+locationBtn = informationPart.querySelector(".get-location"),
 weatherInformation = card.querySelector(".info-weather"),
 imageWeather = document.querySelector(".info-weather img"),
+weatherLongitude = document.querySelector("#long"),
+weatherLatitude = document.querySelector("#lat"),
+weatherByLongLat = document.querySelector(".long-lat"),
 weatherBody = document.querySelector(".body"),
 returningBack = card.querySelector("header i");
 let api;
@@ -40,6 +43,23 @@ function fetchData(){
     boxText.classList.add("pending");
     fetch(api).then(response =>response.json()).then(result => weatherDetails(result));
 }
+const fetchWeatherByLongLat = async(latitude, longitude)=>{
+    try {
+        const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=05fa113414e438012693c49067410772`);
+        const data = await res.json();
+        fetchData(data);
+    } catch (error) {
+        alert('No longitude and latitude exists');
+        
+    }
+}
+weatherByLongLat.addEventListener('click', (e)=>{
+    e.preventDefault();
+    fetchWeatherByLongLat(weatherLongitude.value, weatherLatitude.value);
+    weatherLongitude.value = '';
+    weatherLatitude.value = '';
+});
+
 function weatherDetails(informationAbout){
     if(informationAbout.cod == "404"){
         boxText.classList.replace("pending", "error")
