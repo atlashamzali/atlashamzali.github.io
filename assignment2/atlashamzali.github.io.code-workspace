@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../Desktop/{FirstName}-{LastName}-{ID}-Midterm-Coding"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "atlashamzali.github.io"
+	}
+}
